@@ -173,7 +173,8 @@ $appName = explode('.', $domain)[0];
                         $user = $meli->authorize($_GET['code'], $redirectURI);
 
                         // Now we create the sessions with the authenticated user
-                        $_SESSION['access_token'] = $user['body']->access_token;
+                        $_SESSION['access_token'] = "APP_USR-7005534445752402-062708-3a3f3a66dc1af9621227bc78a6fda611-331140478";
+                        //$_SESSION['access_token'] = $user['body']->access_token;
                         $_SESSION['expires_in'] = $user['body']->expires_in;
                         $_SESSION['refresh_token'] = $user['body']->refresh_token;
 
@@ -222,7 +223,7 @@ $appName = explode('.', $domain)[0];
                         echo '<a target="_blank" href="'.$response["body"]->permalink.'">'.$response["body"]->permalink.'</a><br />';
 
                     } else if($_GET['code']) {
-                        echo '<p><a alt="Publish Item" class="btn" href="/?code='.$_GET['code'].'&publish_item=ok">Publish Item</a></p>';
+                        echo '<p><a alt="Publish Item" class="btn" href="?code='.$_GET['code'].'&publish_item=ok">Publish Item</a></p>';
                     } else {
                         echo '<p><a alt="Publish Item" class="btn disable" href="#">Publish Item</a> </p>';
                     }
