@@ -1,7 +1,7 @@
 .DS_Store
 .project
 *.no-git
-nbproject/private/
+/nbproject/private/
 build/
 nbbuild/
 dist/
