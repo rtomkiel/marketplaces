@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'vendor/Meli/meli.php';
+require 'libs/Meli/meli.php';
 require 'configApp.php';
 
 $domain = $_SERVER['HTTP_HOST'];
