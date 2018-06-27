@@ -1,5 +1,5 @@
 .DS_Store
 .project
 *.no-git
-nbproject
+/nbproject
 /libs/mercadolibre/
