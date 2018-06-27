@@ -1,5 +1,10 @@
 .DS_Store
 .project
 *.no-git
-/nbproject
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 /libs/mercadolibre/
